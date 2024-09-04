@@ -12,14 +12,14 @@ export default async function Home() {
       <h1>Home Page</h1>
       <nav>
         <ul>
-          <li><Link href="src/app/pages/statistics.js">Statistics</Link></li>
-          <li><Link href="src/app/pages/statistics.js">Contact</Link></li>
+          <li><Link href="./pages/statistics">Statistics</Link></li>
+          <li><Link href="./pages/contact">Contact</Link></li>
         </ul>
       </nav>
       <ul>
         {personas.map(person => (
           <li key={person.id}>
-            <Link href={`src/app/pages/person/${person.id}`}>{person.nombre} {person.apellido}</Link>
+            <Link href={`./pages/person/${person.id}.js`}>{person.nombre} {person.apellido}</Link>
           </li>
         ))}
       </ul>
